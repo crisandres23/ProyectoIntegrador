@@ -18,7 +18,7 @@ while True:
     print(tecla)
     # Comprobar si la tecla es la flecha hacia arriba
     if tecla == readchar.key.UP:
-        # Asignar el valor de la tecla ENTER a la variable keypress
+        # Asignar el valor de la tecla flecha arriba a la variable keypress
         keypress = readchar.key.UP
         # Salir del bucle
         break
