@@ -27,5 +27,29 @@ while True:
         # Salir del bucle
         break
 
+    import os
+import keyboard
+
+# Iniciamos el número en 0
+numero = 0
+
+# Creamos un bucle infinito
+while True:
+  # Esperamos a que se presione la tecla n
+  keyboard.wait("n")
+  # Borramos la terminal usando el comando cls
+  os.system("cls")
+  # Incrementamos el número en 1
+  numero = numero + 1
+  # Imprimimos el nuevo número
+  print(numero)
+  # Verificamos si el número es igual a 50
+  if numero == 50:
+    # Si es así, salimos del bucle con break
+    break
+
+# Imprimimos un mensaje final
+print("Fin del programa")
+
 
 
