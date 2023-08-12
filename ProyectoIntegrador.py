@@ -26,30 +26,35 @@ while True:
     if tecla == readchar.key.UP:
         # Salir del bucle
         break
+#parte 3 del proyecto
+import os
+os.system 
+import readchar
+keypress = readchar.readkey()
+def terminal():
+      os.system ("cls" if os.name =="nt" else "clear")
 
-    import os
-import keyboard
-
-# Iniciamos el número en 0
+def main():
+    print("presione la tecla UP. Para salir del bucle while")
+    while True:
+        char =readchar.readkey()
+        print(f"Tecla presionada: {char}")
+        #print(f"Tecla presionada: {char}")
+        if char == readchar.key.UP:
+            print("Presionaste la tecla UP. Saliendo del bucle")
+        break
 numero = 0
 
-# Creamos un bucle infinito
-while True:
-  # Esperamos a que se presione la tecla n
-  keyboard.wait("n")
-  # Borramos la terminal usando el comando cls
-  os.system("cls")
-  # Incrementamos el número en 1
-  numero = numero + 1
-  # Imprimimos el nuevo número
-  print(numero)
-  # Verificamos si el número es igual a 50
-  if numero == 50:
-    # Si es así, salimos del bucle con break
-    break
+while numero <=50:
+            terminal()
+            print(f"Numero actual: {numero}")
 
-# Imprimimos un mensaje final
-print("Fin del programa")
-
+            char = readchar.readkey()
+            if char == "n":
+                numero += 1
+                if numero ==50:
+                    terminal()
+                    print("Llegaste al numero 50:")
+                    break
 
 
