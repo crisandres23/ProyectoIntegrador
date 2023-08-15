@@ -28,33 +28,24 @@ while True:
         break
 #parte 3 del proyecto
 import os
-os.system 
 import readchar
-keypress = readchar.readkey()
-def terminal():
-      os.system ("cls" if os.name =="nt" else "clear")
 
-def main():
-    print("presione la tecla UP. Para salir del bucle while")
-    while True:
-        char =readchar.readkey()
-        print(f"Tecla presionada: {char}")
-        #print(f"Tecla presionada: {char}")
-        if char == readchar.key.UP:
-            print("Presionaste la tecla UP. Saliendo del bucle")
-        break
+def borrar_e_imprimir(numero):
+    os.system('cls' if os.name=='nt' else 'clear')
+    print(f"Numero actual: {numero}")
+
 numero = 0
+borrar_e_imprimir(numero)
 
-while numero <=50:
-            terminal()
-            print(f"Numero actual: {numero}")
+while numero < 50:
+    char = readchar.readkey()
+    if char == "n":
+        numero += 1
+        borrar_e_imprimir(numero)
+    elif char == readchar.key.UP:
+        print("Presionaste la tecla UP. Saliendo del programa")
+        break
 
-            char = readchar.readkey()
-            if char == "n":
-                numero += 1
-                if numero ==50:
-                    terminal()
-                    print("Llegaste al numero 50:")
-                    break
+print("Fin del programa")
 
 
