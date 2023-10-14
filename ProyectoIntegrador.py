@@ -30,6 +30,8 @@ while True:
 import os
 import readchar
 
+
+    
 def borrar_e_imprimir(numero):
     os.system('cls' if os.name=='nt' else 'clear')
     print(f"Numero actual: {numero}")
@@ -59,6 +61,7 @@ def limpiar_pantalla(matriz):
         print("".join(fila))
 
 def convertir_mapa(mapa):
+    
     mapa = mapa.strip()
     filas = mapa.split("\n")
     matriz = [list(fila) for fila in filas]
