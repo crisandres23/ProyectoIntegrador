@@ -10,5 +10,4 @@ if __name__ == "__main__":
 
     juego = JuegoArchivo(mapa)
     juego.terminal()
-    #print(juego.matriz_maze)
     juego.jugar()
