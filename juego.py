@@ -29,6 +29,7 @@ class Juego:
                 elif matriz_maze[i][j] == "E":
                     posicion_fin = (i, j)
         return posicion_inicio, posicion_fin
+    
     def jugar(self):
         while (self.px, self.py) != self.posicion_fin:
             self.terminal()
